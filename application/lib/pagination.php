@@ -1,4 +1,9 @@
 <?php
+/**
+*	Class pagination
+*
+*
+*/
 	class Pagination{
 		private var $config = array();
 		private var $base_url;
@@ -6,10 +11,12 @@
 		private var $per_page;
 		private var $start_from;
 
+		// construct pagination class
 		function __construct(){
 
 		}
 
+		// config pagination class
 		public function config($config){
 			$this->base_url = $config['base_url'];
 			$this->total_rows = $config['total_rows'];
@@ -19,7 +26,10 @@
 			$query = mysql_query("SELECT * FROM student ORDER BY id DESC LIMIT $start_from, $per_page");
 		}
 
+
+		// create links 
 		public function create_link(){
+				// select DBS
 				$sql = "SELECT * FROM student "; 
 				$rs_result = mysql_query($sql); //run the query
 				$total_records = mysql_num_rows($rs_result);  //count number of records
