@@ -3,13 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2016 at 04:50 AM
+-- Generation Time: Mar 21, 2016 at 04:54 AM
 -- Server version: 5.5.36
 -- PHP Version: 5.4.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00"; 
-
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `student`djhd
+-- Database: `student`
 --
 
 -- --------------------------------------------------------
@@ -36,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `tbl_sinhvien` (
   `gender` int(11) NOT NULL DEFAULT '0',
   `country` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `tbl_sinhvien`
@@ -44,7 +43,11 @@ CREATE TABLE IF NOT EXISTS `tbl_sinhvien` (
 
 INSERT INTO `tbl_sinhvien` (`id`, `name`, `address`, `email`, `phone`, `gender`, `country`) VALUES
 (1, 'Bach Vu', 'Ha Noi', 'bachvu@gmail.com', 123456789, 1, 'Viet Nam'),
-(2, 'Vinh Anh', 'Ha Noi', 'vinhanh@gmail.com', 123456789, 1, 'Vietnam');
+(2, 'Vinh Anh', 'Ha Noi', 'vinhanh@gmail.com', 123456789, 1, 'Vietnam'),
+(3, 'Quang Huy', 'Nam Dinh', 'quanghuy@gmail.com', 123456789, 1, 'Vietnam'),
+(4, 'Minh Long', 'Vietnam', 'minhlong@gmail.com', 123456789, 1, 'Vietnam'),
+(5, 'Jackie', 'YA', 'jackie@hotmail.com', 123456789, 1, 'USA'),
+(6, 'JRohn', 'London', 'rohn@gmail.com', 123456789, 1, 'England');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
