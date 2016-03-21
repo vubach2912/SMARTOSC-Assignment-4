@@ -28,6 +28,9 @@ class m_student{
 		$this->country = $country;
     }
 
+    /*
+     * Get value with your parameter id, name, email, address, gender, country
+     */
 	public function getId(){
 		return $this->id;
 	}
@@ -56,6 +59,9 @@ class m_student{
 		return $this->country;
 	}
 
+    /*
+     * Update name of student with parameter username (string)
+     */
 	public function setUsername($username){
 		$this->username = $username;
         if($this->id != 0){
@@ -64,6 +70,9 @@ class m_student{
         }
 	}
 
+    /*
+     * Update email of student with parameter email (string)
+     */
 	public function setEmail($email){
         $this->email = $email;
         if($this->id != 0){
@@ -72,6 +81,9 @@ class m_student{
         }
 	}
 
+    /*
+     * Update address of student with parameter address (string)
+     */
 	public function setAddress($address){
         $this->address = $address;
         if($this->id != 0){
@@ -80,6 +92,9 @@ class m_student{
         }
 	}
 
+    /*
+     * Update phone of student with parameter phone (int)
+     */
 	public function setPhone($phone){
         $this->phone = $phone;
         if($this->id != 0){
@@ -88,6 +103,9 @@ class m_student{
         }
 	}
 
+    /*
+     * Update gender of student with parameter gender (int)
+     */
 	public function setGender($gender){
         $this->gender = $gender;
         if($this->id != 0){
@@ -96,6 +114,9 @@ class m_student{
         }
 	}
 
+    /*
+     * Update country of student with parameter country
+     */
 	public function setCountry($country){
         $this->country = $country;
         if($this->id != 0){
