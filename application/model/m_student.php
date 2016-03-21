@@ -1,6 +1,11 @@
 <?php
 /*
- * 
+ * Model student
+ * __contruct parameter -> id, name, email, address, phone, gender, country
+ *
+ * Function get
+ * Function set -> update this value in database if ID other 0 (ID != 0)
+ *
  */
 require_once('../../application/model/m_database.php');
 class m_student{
