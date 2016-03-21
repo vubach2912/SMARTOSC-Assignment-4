@@ -86,8 +86,8 @@
 
 
 		<div class="modal-footer">
-		<button type="submit" class="btn btn-default" id="btnAdd_student">Add</button>
-		<button type="reset" class="btn btn-default" id="btnClean_student">Reset</button>
+		<button type="submit" class="btn btn-default" id="btnAdd_student" name="add">Add</button>
+		<button type="reset" class="btn btn-default" id="btnClean_student" name="reset">Reset</button>
 		</div>
     </div>
 

@@ -1,4 +1,5 @@
 <!--Show data-->
+
 <div div="row">
 	<table class="table table-striped table-hover">
 		<thead>
@@ -16,8 +17,9 @@
 		<tbody>
 			<?php 
 				//Neu co du lieu sinh vien
-				if(isset($student) and count($student)){
-					foreach ($student as $key => $value) {
+				if(isset($this->student)){
+
+					foreach ($this->student as $value) {
 			?>
 						<tr>
 							<th><?php echo $value['id']; ?></th>

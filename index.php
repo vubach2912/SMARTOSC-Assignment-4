@@ -1,3 +1,7 @@
+<?php
+require 'application/controller/c_student.php';
+$controller = new c_student();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +43,7 @@
 
 		<!--Table Data-->
 		<?php  
-			include("application/view/v_listall.php");
+			$student = $controller->listAll();
 		?>
 		<!--Table Data-->
 	</div><!--Container-->
