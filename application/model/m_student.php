@@ -17,7 +17,7 @@ class m_student{
 	var $gender;
 	var $address;
 	var $country;
-	
+
 	public function __construct($id,$username,$email,$address,$phone,$gender,$country){
 		$this->id = $id;
 		$this->username = $username;
@@ -26,6 +26,10 @@ class m_student{
 		$this->phone = $phone;
 		$this->gender = $gender;
 		$this->country = $country;
+        if($id == 0){
+            $sql = "INSERT INTO (`id`,`name`.`email`,`address`,`phone`,`gender`,country) VALUE ('$id','$username','$email','$address',$phone,$gender,'$country')";
+            $this->db->executeQuery($sql);
+        }
     }
 
     /*
