@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +19,7 @@
 	<script type="text/javascript" src="asset/jquery/jquery.validate.min.js"></script>
 
 	<script type="text/javascript" src="asset/jquery/add.js"></script>
+	<script type="text/javascript" src="asset/jquery/edit.js"></script>
 
 	</head>
 <body>
@@ -34,6 +36,12 @@
 			include("application/view/v_add.php");
 		?>
 		<!--Add student-->
+
+		<!--Edit student-->
+		<?php  
+			include("application/view/v_edit.php");
+		?>
+		<!--Edit student-->
 
 		<br />
 
