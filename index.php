@@ -9,13 +9,15 @@
 	<link rel="stylesheet"  href="asset/bootstrap/css/bootstrap.css">
 	
 	<!--JQuery-->
-	<script src="asset/js/jquery.min.js"></script>
+	<script src="asset/jquery/jquery.min.js"></script>
 
 	<!--Bootstrap JS-->
 	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
 
 	<!--JQquery validation-->
-	<script type="text/javascript" src="asset/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="asset/jquery/jquery.validate.min.js"></script>
+
+	<script type="text/javascript" src="asset/jquery/add.js"></script>
 
 	</head>
 <body>
@@ -33,6 +35,7 @@
 		?>
 		<!--Add student-->
 
+		<br />
 
 		<!--Table Data-->
 		<?php  
