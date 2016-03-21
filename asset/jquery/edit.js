@@ -1,4 +1,15 @@
 $(document).ready(function(){
+	//Show data on modal
+	$('.btnEdit_student_show').click(function(){
+		$('#txtStudentID_edit').val($(this).attr('data-id'));
+		$('#txtName_edit').val($(this).attr('data-name'));
+		$('#txtPhone_edit').val($(this).attr('data-phone'));
+		$('#txtAddress_edit').val($(this).attr('data-address'));
+		$('#txtCountry_edit').val($(this).attr('data-country'));
+		$('#txtEmail_edit').val($(this).attr('data-email'));
+		$('#slGender_edit').val($(this).attr('data-gender'));
+	});
+
 	//Validate when click on add button in modal add student
 	$('#btnEdit_student').click(function(){
 		$('#frmEdit_student').validate({
@@ -33,16 +44,23 @@ $(document).ready(function(){
 	//Khi ấn vào nút làm sạch trong modal thêm  product
 	$('#btnClean_student_edit').click(function(){
 		$('.error').empty();
+		$('#txtName_edit').val("");
+		$('#txtAddress_edit').val("");
+		$('#txtPhone_edit').val("");
+		$('#txtEmail_edit').val("");
+		$('#slGender_edit').val("1");
+		$('#txtCountry_edit').val("");
 	});
+
 
 	//Khi ấn vào nút close trong modal thêm product
 	$('#btnClose_student_edit').click(function(){
 		$('.error').empty();
-		$('#txtName').val("");
-		$('#txtAddress').val("");
-		$('#txtPhone').val("");
-		$('#txtEmail').val("");
-		$('#slGender').val("1");
-		$('#txtCountry').val("");
+		$('#txtName_edit').val("");
+		$('#txtAddress_edit').val("");
+		$('#txtPhone_edit').val("");
+		$('#txtEmail_edit').val("");
+		$('#slGender_edit').val("1");
+		$('#txtCountry_edit').val("");
 	});
 });

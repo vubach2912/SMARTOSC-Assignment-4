@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+
 <?php
 require 'application/controller/c_student.php';
 $controller = new c_student();
 ?>
-=======
 
->>>>>>> origin/master
 <!DOCTYPE html>
 <html>
 <head>
