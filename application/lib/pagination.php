@@ -1,1 +1,8 @@
-pagination.php
+<?php
+	class Pagination{
+		function __construct(){
+			
+		}
+	}
+
+?>
