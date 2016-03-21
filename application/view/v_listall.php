@@ -34,7 +34,7 @@
 							<th><?php echo $value['gender']; ?></th>
 							<th><?php echo $value['country']; ?></th>
 							<td><a href="" class="btnEdit_student_show" data-toggle="modal" data-target="#modal-edit-student" data-id="<?php echo $value['id']; ?>" data-name="<?php echo $value['name']; ?>" data-phone="<?php echo $value['phone']; ?>" data-address="<?php echo $value['address']; ?>" data-country="<?php echo $value['country']; ?>" data-gender="<?php echo $value['gender']; ?>" data-email="<?php echo $value['email']; ?>"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="color: red"></span> Sửa</a></td>
-							<td><a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]".'&id_product='.$value['pro_id']; ?>"><span class="glyphicon glyphicon-trash" aria-hidden="true" style="color: red"></span> Xóa</a></td>
+							<td><a href="" class="btnDelete_student_show" data-toggle="modal" data-target="#modal-delete-student"  data-id="<?php echo $value['id']; ?>"><span class="glyphicon glyphicon-trash" aria-hidden="true" style="color: red"></span> Xóa</a></td>
 						</tr>
 			<?php
 					}

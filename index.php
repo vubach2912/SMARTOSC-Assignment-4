@@ -25,6 +25,7 @@ $controller = new c_student();
 
 	<script type="text/javascript" src="asset/jquery/add.js"></script>
 	<script type="text/javascript" src="asset/jquery/edit.js"></script>
+	<script type="text/javascript" src="asset/jquery/delete.js"></script>
 
 	</head>
 <body>
@@ -47,6 +48,12 @@ $controller = new c_student();
 			include("application/view/v_edit.php");
 		?>
 		<!--Edit student-->
+
+		<!--Delete student-->
+		<?php  
+			include("application/view/v_delete.php");
+		?>
+		<!--Delete student-->
 
 		<br />
 
